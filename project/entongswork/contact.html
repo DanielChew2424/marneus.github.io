@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Contact</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <link rel="stylesheet" href="bakery.css">
+        <link>
+        <!--[if lt IE 9]>
+            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+        <![endif]-->
+        </link>
+        <style>
+            form{background-color: rgb(216, 216, 216);
+                font-family: Arial, Helvetica, sans-serif;
+                width: auto; padding: 10px;}
+            label{float: left;clear: left;display: block;
+                width: auto; text-align: justify;
+                padding-right: 10px; margin-top: 10px;}
+            input, textarea{margin-top: 10px;display: block;}
+            #submit{margin-left: 100px;}
+        </style>
+    </head>
+    <body id="wrap">
+        <header>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="menu.html">MENU</a>
+                <a href="aboutus.html">ABOUT US</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="cart.html">SHOPPING CART</a>
+            </nav>
+
+            <div class="div1">
+            <h1>Contact</h1>
+            <br><br><br><br><br><br><br><br><br>
+            <a href="menu.html"><button class="btn">Click me!</button></a>
+            </div>
+        </header>
+
+        <h2>Send Us Your Comments</h2>
+        <p>Required fields are marked with an asterisk*</p>
+        <form action="action.php" method="GET">
+            <label>*Name:</label>
+            <input type="text" size="50" maxlength="5" placeholder="first and last name" required> 
+            <br>
+            <label>*E-mail:</label>
+            <input type="email" size="50" placeholder="you@yourdomain.com" required>
+            <br>
+            <label>Phone Number:</label>
+            <input type="tel" size="42">
+            <br>
+            <label>Rating(1-10):</label>
+            <input type="range" pattern="[1-10]" >
+            <br>
+            <label>*Comments:</label>
+            <textarea cols="39" rows="2" required></textarea>
+            <input type="submit" id="submit" value="SEND"> 
+        </form>
+
+        <h1>Location</h1>
+        <div style="width: 100%">
+            <iframe width="100%" height="300px" frameborder="0" scrolling="no" 
+            marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Batu%207,%20Jalan%20Lama,%2046000%20Petaling%20Jaya,%20Selangor.+(Delicious%20Bakery)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
+        </div>
+        
+        <footer>
+            <h3>Get in Touch</h3>
+
+                No. 39, Delicious Bakery,
+                <br>12010 Delicious Road,
+                <br>Zephyr, CA 95555
+                <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
+                <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
+
+            <br><br><copyright>Copyright &copy; 2021 Bakery</copyright>
+        </footer>
+    </body>
+</html>
