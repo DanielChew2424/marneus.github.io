@@ -11,16 +11,60 @@
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
         <![endif]-->
         </link>
+        
         <style>
-            form{background-color: rgb(216, 216, 216);
-                font-family: Arial, Helvetica, sans-serif;
-                width: auto; padding: 10px;}
-            label{float: left;clear: left;display: block;
-                width: auto; text-align: justify;
-                padding-right: 10px; margin-top: 10px;}
-            input, textarea{margin-top: 10px;display: block;}
-            #submit{margin-left: 100px;}
+            @font-face {font-family: 'handwriting';
+                        src: url('fonts/journal-webfont.woff2') format('woff2'),
+                            url('fonts/journal-webfont.woff') format('woff');
+                        font-weight: normal; font-style: normal;}
+
+            @font-face {font-family: 'typewriter';
+                        src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
+                            url('fonts/veteran_typewriter-webfont.woff') format('woff');
+                        font-weight: normal; font-style: normal;}
+
+            form.postcard {position: relative;width: 740px; height: 498px;
+                margin: 0 auto; background: url(formbackground.jpg) no-repeat;}
+
+            h5 {position: absolute; left: 410px; top: 160px;
+                font : 1em "typewriter", Verdana, Geneva, Tahoma, sans-serif;}
+
+            #from {position: absolute;left: 390px;top: 220px;}
+
+            #email {position: absolute; left: 390px; top: 270px;}
+
+            #message {position: absolute;left: 20px;top: 70px;}
+
+            label {font: .8em "typewriter", Verdana, Geneva, Tahoma, sans-serif;}
+
+            input, textarea {font: 1.5em "handwriting", Verdana, Geneva, Tahoma, sans-serif;
+                            border: none;padding : 0 10px;margin: 0;width: 240px;
+                            background: none;}
+
+            input:focus, textarea:focus {background: rgba(0,0,0,.1);
+                                        border-radius: 5px;outline: none;}
+
+            input {height: 2.5em; /* for IE */
+                vertical-align: middle; /* This is optional but it makes legacy IEs look better */}
+
+            textarea {display: block;padding : 10px;margin: 10px 0 0 -10px;
+                    width: 340px;height: 360px;resize: none;overflow: auto;}
+
+            button.post {position: absolute;left: 440px;top: 360px;padding: 5px;
+                    font: bold .6em; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 2px solid #333;
+                    border-radius: 5px;background: none;cursor: pointer;
+
+-webkit-transform: rotate(-1.5deg);
+   -moz-transform: rotate(-1.5deg);
+    -ms-transform: rotate(-1.5deg);
+     -o-transform: rotate(-1.5deg);
+        transform: rotate(-1.5deg);}
+
+            button:hover,button:focus {outline: none;background: #000;color: #FFF;}
+
         </style>
+
+
     </head>
     <body id="wrap">
         <header>
@@ -39,30 +83,34 @@
             </div>
         </header>
 
-        <h2>Send Us Your Comments</h2>
-        <p>Required fields are marked with an asterisk*</p>
-        <form action="action.php" method="GET">
-            <label>*Name:</label>
-            <input type="text" size="50" maxlength="5" placeholder="first and last name" required> 
-            <br>
-            <label>*E-mail:</label>
-            <input type="email" size="50" placeholder="you@yourdomain.com" required>
-            <br>
-            <label>Phone Number:</label>
-            <input type="tel" size="42">
-            <br>
-            <label>Rating(1-10):</label>
-            <input type="range" pattern="[1-10]" >
-            <br>
-            <label>*Comments:</label>
-            <textarea cols="39" rows="2" required></textarea>
-            <input type="submit" id="submit" value="SEND"> 
-        </form>
+        <h4>Leave us your comments</h4>
+        <form class="postcard">
+            <h5>To: Delicious Bakery</h5>
+          
+            <div id="from">
+              <label for="name">From:</label>
+              <input type="text" id="name" name="user_name" placeholder="Your Name">
+            </div>
+          
+            <div id="email">
+              <label for="mail">Email:</label>
+              <input type="email" id="mail" name="user_email" placeholder="example@email.com">
+            </div>
+          
+            <div id="message">
+              <label for="msg">Your message:</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+          
+            <button type="submit" class="post">Send your message>>></button>
+
+          </form>
+
 
         <h1>Location</h1>
         <div style="width: 100%">
             <iframe width="100%" height="300px" frameborder="0" scrolling="no" 
-            marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Batu%207,%20Jalan%20Lama,%2046000%20Petaling%20Jaya,%20Selangor.+(Delicious%20Bakery)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+             src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Batu%207,%20Jalan%20Lama,%2046000%20Petaling%20Jaya,%20Selangor.+(Delicious%20Bakery)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             </iframe>
         </div>
         
