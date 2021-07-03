@@ -13,12 +13,13 @@
             #wrap{width: 1000px; margin: 0 auto;}
             header{height: 500px;}
             h1{margin-bottom: 0;text-align: center;font-size: 200%;}
-            .menu{display:grid;grid-template-columns: 1fr 1fr 1fr;}
+            .menu{display:grid; grid-template-columns: 1fr 1fr 1fr;}
             figure{display: inline-block;}
             figcaption a{text-decoration: none;text-underline-position: auto;}
             footer{height: auto; background-color:#F2B6A0 ; 
                     padding: 10px 20px 10px 20px;}
-            copyright{font-style: italic; text-align: center;}
+            .copyright{font-style: italic; text-align: center;}
+            
             
             
         </style>
@@ -42,25 +43,33 @@
     </header>
     <main>
         <h2>Cakes</h2>
+        <br>
         <h3>Sponge Cakes</h3>
         <figure class="menu">
-            <a href="product/1fruitscake.html"><img src="2spongecake/fruitscakes.jpg" alt="Fruits Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1fruitscake.html">Fruits Cake</a></figcaption>
-            
-            <a href="product/1stawberrycake.html"><img src="2spongecake/stawberrycakes.jpg" alt="Stawberry Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1stawberrycake.html">Stawberry Cake</a></figcaption>
-            
-            <a href="product/1chocolatecake.html"><img src="2spongecake/chocolatecakes.jpg" alt="Chocolate Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1chocolatecake.html">Chocolate Cake</a></figcaption>
-            
-            <a href="product/1tiramisucake.html"><img src="2spongecake/tiramisucakes.jpg" alt="Tiramisu Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1tiramisucake.html">Tiramisu Cake</a></figcaption>
-            
-            <a href="product/1redvelvetcake.html"><img src="2spongecake/redvelvetcakes.jpg" alt="Red Velvet Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1redvelvetcake.html">Red Velvet Cake</a></figcaption>
-            
-            <a href="product/1carrotcake.html"><img src="2spongecake/carrotcakes.jpg" alt="Carrot Cake" height="160" width="180"></a>
-            <figcaption><a href="product/1carrotcake.html">Carrot Cake</a></figcaption>
+            <div>
+                <a href="product/1fruitscake.html"><img src="2spongecake/fruitscakes.jpg" alt="Fruits Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1fruitscake.html">Fruits Cake</a></figcaption>
+            </div>
+            <div>
+                <a href="product/1stawberrycake.html"><img src="2spongecake/stawberrycakes.jpg" alt="Stawberry Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1stawberrycake.html">Stawberry Cake</a></figcaption>
+            </div>
+            <div>
+                <a href="product/1chocolatecake.html"><img src="2spongecake/chocolatecakes.jpg" alt="Chocolate Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1chocolatecake.html">Chocolate Cake</a></figcaption>
+            </div>
+            <div>
+                <a href="product/1tiramisucake.html"><img src="2spongecake/tiramisucakes.jpg" alt="Tiramisu Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1tiramisucake.html">Tiramisu Cake</a></figcaption>
+            </div>
+            <div>
+                <a href="product/1redvelvetcake.html"><img src="2spongecake/redvelvetcakes.jpg" alt="Red Velvet Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1redvelvetcake.html">Red Velvet Cake</a></figcaption>
+            </div>
+            <div>
+                <a href="product/1carrotcake.html"><img src="2spongecake/carrotcakes.jpg" alt="Carrot Cake" height="160" width="180"></a>
+                <figcaption><a href="product/1carrotcake.html">Carrot Cake</a></figcaption>
+            </div>
         </figure>
         <h3>Cheese Cakes</h3>
         <figure>
@@ -145,7 +154,7 @@
             <br>Zephyr, CA 95555
             <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
             <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
-            <br>Copyright &copy; 2021 Bakery
+            <div class="copyright"><br>Copyright &copy; 2021 Bakery</div>
     </footer>
 </body>
 </html>
