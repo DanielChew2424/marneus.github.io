@@ -1,127 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-    
-    <head>
+
+<head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <meta name="viewport" content="width=device-width" , initial-scale=1.0>
         <title>Delicious Bakery: Shopping cart</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+</head>
 
-        <style>
-        /*******************************/
-        /********* General CSS *********/
-        /*******************************/
-            body {color: #213546;
-                       font-family: 'Raleway', sans-serif;}
-            a{color: #4F84C4;transition: .3s;}
-            a:link{text-decoration: none;}
-            a:visited{text-decoration: none;}
-            a:hover{text-decoration: underline;}
-            a:active{text-decoration: underline;}
-            a:focus{ color: #00539C;outline: none;text-decoration: none;}
-
-            nav, header, footer {display: block;}
-            #wrap{width: 1000px;
-                    margin: 0 auto;
-                    background-color: white;
-                    }
-            header{background-image: url(toast.jpg);
-                    background-repeat: no-repeat;
-                    }
-            nav{text-decoration: none;
-                    background-color:  #F2B6A0; 
-                    height: auto;
-                    padding: 15px;
-                    position: sticky; top: 0;}
-            footer{height: auto;
-                    background-color:#F2B6A0;
-                    padding: 10px 20px 10px 20px;}
-            .form1{background-color:lightblue;
-                    width: 100%;
-                    border: green solid 2px;
-                    padding: 45px 0px 45px;
-                    }
-            .form2{background-color:lightblue;
-                    width: 100%;
-                    border: green solid 2px;
-                    padding: 0px 0px 0px;
-                    }
-            h1{border: #F28444 double 5px; text-align: center;
-                    }
-            h2{border:#40241e solid;
-                    border-radius:50px; 
-                    text-align:center;
-                    padding: 3px;
-                    margin:auto;
-                    width:26%;
-                    }
-            .box1{border:black solid 2px; 
-                    margin-right: 800px;
-                    }
-            div h3{display: inline-block;}
-            .div3{border-width: 100%;
-                    border-style: solid;
-                    border-color: black;
-                    text-align: right;
-                    }
-            button{display: inline-block; padding-right: 10px; margin: 20px;}
-            .spacing{margin: 20px}
-            .middle{padding-left: 95px; border-bottom: 1px solid black;}
-            .copyright{font-style: italic; text-align: center;}
-
-        </style>
-
-    </head>
-    
-    <body id="wrap">
+<body id="wrap">
 
         <header>
-            <h1> Delicious Bakery</h1>
-            <nav>
-                <a href="index.html">HOME</a>
-                <a href="menu.html">MENU</a>
-                <a href="aboutus.html">ABOUT US</a>
-                <a href="contact.html">CONTACT</a>
-            </nav>        
+                <div class="header1">
+                        <h1> Delicious Bakery</h1>
+                        <div class="nav element">
+                                <nav>
+                                        <a href="index.html">HOME</a>
+                                        <a href="menu.html">MENU</a>
+                                        <a href="aboutus.html">ABOUT US</a>
+                                        <a href="contact.html">CONTACT</a>
+                                </nav>
+                        </div>
+                </div>
         </header>
         <br>
 
 
-        
+
         <main>
-            <form class="form1" action="action.php" method="GET">
-            <h2><a href="">Shopping Cart</a></h2>
-            </form>
+                <div>
+                        <form class="form1" action="action.php" method="GET">
+                                <div>
+                                        <h2><a href="">Shopping Cart</a></h2>
+                                </div>
+                        </form>
+                </div>
 
-            <h3 class="box1">What's in your cart?</h3>
+                <div>
+                        <h3 class="box1">What's in your cart?</h3>
+                </div>
 
-            <div>
-            <a href ="https://hlms.help.edu.my/">
-            <img src="1.PNG" alt="loading cat" height="300px" width="320px">
-            </a>
+                <div>
+                        <div>
+                                <div class="middle">
+                                        <a href="https://hlms.help.edu.my/">
+                                                <img src="1.PNG" alt="loading cat" height="300px" width="320px">
 
-            <h3 class="middle">Product name and price</h3>
-            <button>Buy</button>
-            <button>Clear</button>
-            </div>
-            <br><br>
 
-            <div class="div3" action="action.php" method="GET">
-            <h3 class="spacing">Quantity</h3><h3 class="spacing">Total</h3><button>Checkout</button>
-            </div>
-            <br>
+
+                                        </a>
+
+                                        <h3>Product name and price</h3>
+                                        <button>Buy</button>
+                                        <button>Clear</button>
+                                </div>
+                        </div>
+                        <br><br>
+
+                        <div class="div3" action="action.php" method="GET">
+                                <div>
+                                        <h3 class="spacing">Quantity</h3>
+                                        <h3 class="spacing">Total</h3><button>Checkout</button>
+                                </div>
+                        </div>
+                        <br>
 
         </main>
 
         <footer>
-            <h3>Get in Touch</h3>
-            Bakery
-            <br>12010 Bakery Road,
-            <br>Zephyr, CA 95555
-            <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
-            <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
-            <br><br><copyright class="copyright">Copyright &copy; 2021 Bakery</copyright>
+                <h3>Get in Touch</h3>
+                Bakery
+                <br>12010 Bakery Road,
+                <br>Zephyr, CA 95555
+                <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
+                <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
+                <br><br>
+                <copyright class="copyright">Copyright &copy; 2021 Bakery</copyright>
         </footer>
 
-    </body>
+</body>
 
 </html>
