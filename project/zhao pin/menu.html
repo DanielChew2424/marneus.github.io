@@ -5,6 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bakery.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+ 
+    <link href="/cheng long/css/style.css" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
     <![endif]-->
@@ -46,17 +58,54 @@
 </head>
 <body id="wrap">
     <header>
-        <nav>
-            <a href="/entongswork/index.html">HOME</a>
-            <a href="/zhao pin/menu.html">MENU</a>
-            <a href="/cheng long/aboutus.html">ABOUT US</a>
-            <a href="/entongswork/contact.html">CONTACT</a>
-            <a href="/daniel/shoppingcart.html">SHOPPING CART</a>
-        </nav>
-        <div>
-        <h1>Menu</h1>
+        <div class="header">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2">
+                        <div class="brand">
+                            <a href="index.html">
+                                <img src="/cheng long/img/logo 2.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-10">                              
+                        <div class="navbar navbar-expand-lg bg-light navbar-light">
+                            <a href="#" class="navbar-brand">MENU</a>
+                            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                <div class="navbar-nav ml-auto">
+
+                                    <a href="/entongswork/index.html" class="nav-item nav-link">HOME</a>
+                                    <a href="/zhao pin/menu.html" class="nav-item nav-link">MENU</a>
+                                    <a href="/cheng long/aboutus.html" class="nav-item nav-link active">ABOUT US</a>
+                                    <a href="/entongswork/contact.html" class="nav-item nav-link">CONTACT</a>
+                                    <a href="/daniel/shoppingcart.html" class="nav-item nav-link"><i class="fas fa-shopping-basket"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <br>
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Menu</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
         <div id="snow">
             <img src="flour.jpg" alt="Flour" width="100%" height="550">
             <script class="snow">
@@ -78,6 +127,7 @@
         </div>
     </header>
     <main>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
         <h2>Cakes</h2>
         <br>
         <h3>Sponge Cakes</h3>
@@ -214,14 +264,32 @@
         </figure>
         <br><br><br><br>
     </main>
-    <footer>
-        <h3>Get in Touch</h3>
-            Bakery
+    <footer class="footer">
+        <div class="col-lg-10">
+            <h2>Get in Touch</h2>
+            Delicious Bakery
             <br>12010 Bakery Road,
             <br>Zephyr, CA 95555
-            <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
-            <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
-            <br><div class="copyright">Copyright &copy; 2021 Bakery</div>
+            <div class="copyright">Copyright &copy; 2021 Bakery</div>
+
+            <div class="topbar">
+                <div class="topbar-col">
+                    <a href="tel:+012 345 67890"><i class="fa fa-phone-alt" style="color: #F28444;"></i>+012 345 67453</a>
+                </div>
+                <div class="topbar-col">
+                    <a href="mailto:info@example.com"><i class="fa fa-envelope" style="color: #F28444;"></i>deliciousBakery@gmail.com</a>
+                </div>
+                <div class="topbar-col">
+                    <div class="topbar-social">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
