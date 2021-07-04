@@ -214,10 +214,13 @@
                           </div>
                         </div>
                         <div style="justify-content: center; display: flex;">
-          
-                        <button type="submit" class="btn btn-primary float-right" style="width: 400px; margin-right: 10px;">Place Order</button>
-                        <button type="submit" class="btn btn-danger float-right" >Back</button>
-                      </div>
+                          <div class="popup" onclick="myFunction()">
+                            <button type="submit" class="btn btn-primary float-right" style="width: 400px; margin-right: 10px;">Place Order</button>
+                            <span class="popuptext" id="Popup">Order Success!</span>
+                          </div>
+
+                        <a href="../daniel/shoppingcart.html"><button type="button" class="btn btn-danger float-right" >Back</button></a>
+                        </div>
                       </form>
                   
                 </div>
@@ -229,6 +232,13 @@
 </html>
 
 <script>
+  
+  // When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("Popup");
+  popup.classList.toggle("show");
+}
+
 function custom_template(obj){
     var data = $(obj.element).data();
     var text = $(obj.element).text();
