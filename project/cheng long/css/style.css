@@ -560,6 +560,7 @@ a:focus {
     height: auto;
     cursor: pointer;
     -webkit-filter: brightness(100%);
+    filter: brightness(100%);
     -webkit-transition: .4s all;
     -moz-transition: .4s all;
     transition: .4s all;
@@ -567,6 +568,7 @@ a:focus {
 
 .about .youtube-player img:hover {
     -webkit-filter: brightness(90%);
+    filter: brightness(90%);
 }
 
 .about .youtube-player .play {
