@@ -52,3 +52,11 @@ button{display: inline-block; padding-right: 10px; margin: 20px;}
 .middle{border-bottom: 1px solid black;}
 .copyright{font-style: italic; text-align: center;}
 .box1{border:black solid 2px; margin-right: 800px;}
+
+a:hover,
+a:active,
+a:focus {
+    color: #00539C;
+    outline: none;
+    text-decoration: none;
+}
