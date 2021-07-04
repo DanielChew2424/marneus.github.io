@@ -1,4 +1,4 @@
-body {
+body{
     color: #213546;
     font-family: 'Raleway', sans-serif;
 }
@@ -71,7 +71,13 @@ div h3 {
     display: inline-block;
 }
 
-button {
+form{
+    display: inline-block;
+    padding-right: 10px;
+    margin: 20px;
+}
+
+button{
     display: inline-block;
     padding-right: 10px;
     margin: 20px;
@@ -81,6 +87,7 @@ button {
     float: left;
     margin-right: 20px;
     margin-bottom: 60px;
+    height: 45%; width: 45%;
 }
 
 .spacing {
@@ -337,5 +344,3 @@ a:focus {
 .page-header a:last-child::after {
     display: none;
 }
-    
-    
