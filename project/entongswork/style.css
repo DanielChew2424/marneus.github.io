@@ -652,6 +652,7 @@ a:focus {
 /*******************************/
 /******* contact.html CSS ******/
 /*******************************/
+.locationmap{width: 100%; height: 300px;}
 
 @font-face {font-family: 'handwriting';
             src: url('fonts/journal-webfont.woff2') format('woff2'),
@@ -663,8 +664,7 @@ a:focus {
                 url('fonts/veteran_typewriter-webfont.woff') format('woff');
             font-weight: normal; font-style: normal;}
 
-form.postcard {position: relative;width: 740px; height: 498px;
-                margin: 20px auto; 
+form.postcard {position: relative;width: 740px; height: 498px; margin: 20px auto; 
                 background: url(img/formbackground.jpg) no-repeat;}
 
 h5 {position: absolute; left: 417px; top: 200px;
@@ -685,21 +685,14 @@ input, textarea {font: 1.5em "handwriting", Verdana, Geneva, Tahoma, sans-serif;
 input:focus, textarea:focus {background: rgba(0,0,0,.1);
                             border-radius: 5px;outline: none;}
 
-input {height: 2.5em; 
-    vertical-align: middle;}
+input {height: 2.5em; vertical-align: middle;}
 
 textarea {display: block;padding : 10px;margin: 10px 0 0 -10px;
         width: 340px;height: 360px;resize: none;overflow: auto;}
 
 button.post {position: absolute;left: 440px;top: 360px;padding: 5px;
         font: bold .6em; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 2px solid #333;
-        border-radius: 5px;background: none;cursor: pointer;
-        
--webkit-transform: rotate(-1.5deg);
--moz-transform: rotate(-1.5deg);
--ms-transform: rotate(-1.5deg);
--o-transform: rotate(-1.5deg);
-transform: rotate(-1.5deg);}
+        border-radius: 5px;background: none;cursor: pointer;}
 
 button:hover,button:focus {outline: none;background: #000;color: #FFF;}
 
