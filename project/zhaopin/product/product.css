@@ -1,0 +1,19 @@
+* { box-sizing: border-box; }
+
+body { font-family: Verdana, Arial, sans-serif;}
+
+#wrapper {width: 80%;margin: auto;}
+
+header{font-size: 200%;border:2px solid;}
+
+h1{margin-bottom: 0;text-align: center;}
+
+aside{ float: left;width: 200px;letter-spacing:0.1em; }
+
+aside ul{ list-style-type: none;}
+    
+aside a{ text-decoration: none; padding-right: 10px; }
+    
+aside li {  display: inline; }
+    
+main { margin-left: 250px;padding: 20px;}
