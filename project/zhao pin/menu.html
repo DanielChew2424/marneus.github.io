@@ -9,36 +9,39 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
     <![endif]-->
     <style>
-            nav, header, main, footer { display: block; }
+        nav, header, main, footer { display: block; }
 
-            #wrap{width: 1000px; margin: 0 auto;}
+        #wrap{width: 1000px; margin: 0 auto;}
 
-            header{height: 650px;}
+        header{height: 650px;}
 
-            h1{margin-bottom: 0;text-align: center;font-size: xx-large;}
+        h1{margin-bottom: 0;text-align: center;font-size: xx-large;}
 
-            #snow {top: 0;left: 0;right: 0;
-                    bottom: 0;pointer-events: none;z-index: 1000;}
-            
-            main{height: auto;  background-color: #F28444;}
+        #snow {position: relative;top: 0;left: 0;right: 0;
+                bottom: 0;pointer-events: none;z-index: 1000;}
 
-            h2{font-size: x-large;}
+        main{height: auto;  background-color: #F28444;}
 
-            h3{font-size: larger;}
-            .menu{display:grid;margin-left: 42%;margin-right: 100%;}
-            .name{text-align: center;}
+        h2{font-size: x-large;}
 
-            .polaroid{background-color: whitesmoke;
-                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
-            figure{display: grid;}
+        h3{font-size: larger;}
+        
+        .menu{display:grid;grid-template-columns: 1fr 1fr 1fr;}
+        
+        .name{text-align: center;}
 
-            figcaption{text-align: center;}
+        .polaroid{background-color: whitesmoke;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
-            figcaption a{text-decoration: none;text-underline-position: auto;}
+        figure{display: grid;}
 
-            figcaption a{text-decoration: none;text-underline-position: auto;}
+        figure div img{margin-left: 20%;}
 
-            .copyright{font-style: italic; text-align: center;}
+        figcaption{text-align: center;}
+
+        figcaption a{text-decoration: none;text-underline-position: auto;}
+
+        .copyright{font-style: italic; text-align: center;}
     </style>
 </head>
 <body id="wrap">
@@ -56,6 +59,22 @@
         <br>
         <div id="snow">
             <img src="flour.jpg" alt="Flour" width="100%" height="550">
+            <script class="snow">
+                document.addEventListener('DOMContentLoaded', function(){
+                var script = document.createElement('script');
+                script.src = 'https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js';
+                script.onload = function(){
+                particlesJS("snow", {"particles": {"number": {"value": 200,"density": {"enable": true,"value_area": 800}},
+                "color": {"value": "#ffffff"},
+                "opacity": {"value": 0.7,"random": false,"anim": {"enable": false}},
+                "size": {"value": 5,"random": true,"anim": {"enable": false}},
+                "line_linked": {"enable": false},
+                "move": {"enable": true,"speed": 5,"direction": "bottom","random": true,"straight": false,
+                "out_mode": "out","bounce": false,"attract": {"enable": true,"rotateX": 300,"rotateY": 1200}}},
+                "interactivity": {"events": {"onhover": {"enable": false},"onclick": {"enable": false},
+                "resize": false}},"retina_detect": true});}
+                document.head.append(script);});
+           </script> 
         </div>
     </header>
     <main>
