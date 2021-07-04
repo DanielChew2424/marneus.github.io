@@ -7,7 +7,7 @@ a:hover{text-decoration: underline;}
 a:active{text-decoration: underline;}
 a:focus{ color: #00539C;outline: none;text-decoration: none;}
 
- nav, header, footer {display: block;}
+nav, header, footer {display: block;}
 #wrap{width: 1000px;
         margin: 0 auto;
         background-color: white;
@@ -42,12 +42,8 @@ h2{border:#40241e solid;
         margin:auto;
         width:26%;
         }
-.box1{border:black solid 2px; 
-        margin-right: 800px;
-        }
 div h3{display: inline-block;}
-.div3{border-width: 100%;
-        border-style: solid;
+.div3{border-style: solid;
         border-color: black;
         text-align: right;
         }
@@ -55,3 +51,4 @@ button{display: inline-block; padding-right: 10px; margin: 20px;}
 .spacing{margin: 20px}
 .middle{border-bottom: 1px solid black;}
 .copyright{font-style: italic; text-align: center;}
+.box1{border:black solid 2px; margin-right: 800px;}
