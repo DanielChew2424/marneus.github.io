@@ -23,16 +23,6 @@ nav{text-decoration: none;
 footer{height: auto;
         background-color:#F2B6A0;
         padding: 10px 20px 10px 20px;}
-.form1{background-color:lightblue;
-        width: 100%;
-        border: green solid 2px;
-        padding: 45px 0px 45px;
-        }
-.form2{background-color:lightblue;
-            width: 100%;
-        border: green solid 2px;
-        padding: 0px 0px 0px;
-        }
 h1{border: #F28444 double 5px; text-align: center;
         }
 h2{border:#40241e solid;
@@ -41,22 +31,27 @@ h2{border:#40241e solid;
         padding: 3px;
         margin:auto;
         width:26%;
+}
+.div1{background-color:lightblue;
+        width: 100%;
+        border: green solid 2px;
+        padding: 45px 0px 45px;
         }
-div h3{display: inline-block;}
+.div2{background-color:lightblue;
+            width: 100%;
+        border: green solid 2px;
+        padding: 0px 0px 0px;
+        }
 .div3{border-style: solid;
         border-color: black;
         text-align: right;
+        clear: both;
         }
+.divmid{}
+div h3{display: inline-block;}
 button{display: inline-block; padding-right: 10px; margin: 20px;}
-.spacing{margin: 20px}
-.middle{border-bottom: 1px solid black;}
+.img1{float: left;margin-right: 20px; margin-bottom: 60px;}
+.spacing{margin: 20px;}
+.middle{}
 .copyright{font-style: italic; text-align: center;}
 .box1{border:black solid 2px; margin-right: 800px;}
-
-a:hover,
-a:active,
-a:focus {
-    color: #00539C;
-    outline: none;
-    text-decoration: none;
-}

@@ -3,11 +3,11 @@ img{width: 100%; height: auto;}
 #wrap{width: 1000px; margin: 0 auto;}
 
 header{height: 500px;}
-        .div1{background-image: url(bakery.jpg); width: 100%; height: auto;
+        .div1{background-image: url(bakery2.jpg); width: 100%; height: auto;
             background-repeat: no-repeat; background-size: cover;
             text-align: center;}
         nav{text-decoration: none; background-color:  #F2B6A0; 
-            height: auto; padding: 15px; position: sticky; top: 0;}
+            height: auto; padding: 10px; position: sticky; top: 0;}
             a:link{color: #000033;}
             a:visited{color: #344873;}
             a:hover{color: #FFFFFF;}
