@@ -4,106 +4,96 @@
     <head>
         <title>Contact</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width", initial-scale=1.0>
-        <link rel="stylesheet" href="bakery.css">
-        <link>
+        <meta content="width=device-width, initial-scale=1.0">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet">
+
         <!--[if lt IE 9]>
             <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
         <![endif]-->
-        </link>
-        
-        <style>
-            @font-face {font-family: 'handwriting';
-                        src: url('fonts/journal-webfont.woff2') format('woff2'),
-                            url('fonts/journal-webfont.woff') format('woff');
-                        font-weight: normal; font-style: normal;}
-
-            @font-face {font-family: 'typewriter';
-                        src: url('fonts/veteran_typewriter-webfont.woff2') format('woff2'),
-                            url('fonts/veteran_typewriter-webfont.woff') format('woff');
-                        font-weight: normal; font-style: normal;}
-
-            form.postcard {position: relative;width: 740px; height: 498px;
-                margin: 0 auto; background: url(formbackground.jpg) no-repeat;}
-
-            h5 {position: absolute; left: 410px; top: 160px;
-                font : 1em "typewriter", Verdana, Geneva, Tahoma, sans-serif;}
-
-            #from {position: absolute;left: 390px;top: 220px;}
-
-            #email {position: absolute; left: 390px; top: 270px;}
-
-            #message {position: absolute;left: 20px;top: 70px;}
-
-            label {font: .8em "typewriter", Verdana, Geneva, Tahoma, sans-serif;}
-
-            input, textarea {font: 1.5em "handwriting", Verdana, Geneva, Tahoma, sans-serif;
-                            border: none;padding : 0 10px;margin: 0;width: 240px;
-                            background: none;}
-
-            input:focus, textarea:focus {background: rgba(0,0,0,.1);
-                                        border-radius: 5px;outline: none;}
-
-            input {height: 2.5em; /* for IE */
-                vertical-align: middle; /* This is optional but it makes legacy IEs look better */}
-
-            textarea {display: block;padding : 10px;margin: 10px 0 0 -10px;
-                    width: 340px;height: 360px;resize: none;overflow: auto;}
-
-            button.post {position: absolute;left: 440px;top: 360px;padding: 5px;
-                    font: bold .6em; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 2px solid #333;
-                    border-radius: 5px;background: none;cursor: pointer;
-
--webkit-transform: rotate(-1.5deg);
-   -moz-transform: rotate(-1.5deg);
-    -ms-transform: rotate(-1.5deg);
-     -o-transform: rotate(-1.5deg);
-        transform: rotate(-1.5deg);}
-
-            button:hover,button:focus {outline: none;background: #000;color: #FFF;}
-
-        </style>
-
-
     </head>
-    <body id="wrap">
-        <header>
-            <nav>
-                <a href="/project/entongswork/index.html">HOME</a>
-                <a href="/project/zhaopin/menu.html">MENU</a>
-                <a href="/project/chenglong/aboutus.html">ABOUT US</a>
-                <a href="/project/entongswork/contact.html">CONTACT</a>
-                <a href="/project/daniel/shoppingcart.html">SHOPPING CART</a>
-            </nav>
 
-            <div class="div1">
-            <h1>Contact</h1>
-            <br><br><br><br><br><br><br><br><br>
-            <a href="/project/entongswork/index.html"><button class="btn">Click me!</button></a>
-            </div>
+    <div class="wrapper">
+    <body>
+        <header>           
+                <div class="header">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2">
+                                <div class="brand">
+                                    <a href="index.html">
+                                        <img src="img/logo 2.png" alt="Logo">
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-10">                              
+                                <div class="navbar navbar-expand-lg bg-light navbar-light">
+                                    <a href="#" class="navbar-brand">MENU</a>
+                                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                                        <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                                        <div class="navbar-nav ml-auto">
+
+                                            <a href="index.html" class="nav-item nav-link">HOME</a>
+                                            <a href="menu.html" class="nav-item nav-link">MENU</a>
+                                            <a href="aboutus.html" class="nav-item nav-link active">ABOUT US</a>
+                                            <a href="contact.html" class="nav-item nav-link">CONTACT</a>
+                                            <a href="cart.html" class="nav-item nav-link"><i class="fas fa-shopping-basket"></i></a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2>Contact</h2>
+                            </div>                           
+                        </div>
+                    </div>
+                </div>
         </header>
 
-        <h4>Leave us your comments</h4>
+        <main>
+
         <form class="postcard">
             <h5>To: Delicious Bakery</h5>
-          
+
             <div id="from">
               <label for="name">From:</label>
               <input type="text" id="name" name="user_name" placeholder="Your Name">
             </div>
-          
+
             <div id="email">
               <label for="mail">Email:</label>
               <input type="email" id="mail" name="user_email" placeholder="example@email.com">
             </div>
-          
+
             <div id="message">
-              <label for="msg">Your message:</label>
+              <label for="msg">Leave us your comments:</label>
               <textarea id="msg" name="user_message"></textarea>
             </div>
-          
-            <button type="submit" class="post">Send your message>>></button>
 
+            <button type="submit" class="post">Send your message>>></button>
           </form>
 
 
@@ -113,17 +103,35 @@
              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Batu%207,%20Jalan%20Lama,%2046000%20Petaling%20Jaya,%20Selangor.+(Delicious%20Bakery)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
             </iframe>
         </div>
-        
-        <footer>
-            <h3>Get in Touch</h3>
-
-                No. 39, Delicious Bakery,
-                <br>12010 Delicious Road,
-                <br>Zephyr, CA 95555
-                <br>Email: <a href="mailto:delicious@bakery.com">delicious@bakery.com</a>
-                <br>Tel: <a href="tel:888-555-5555">888-555-5555</a>
-
-            <br><br><copyright>Copyright &copy; 2021 Bakery</copyright>
-        </footer>
+        </main>       
     </body>
+
+    <footer class="footer">
+        <div class="col-lg-10">
+            <h2>Get in Touch</h2>
+            Delicious Bakery
+            <br>12010 Bakery Road,
+            <br>Zephyr, CA 95555
+            <div class="copyright">Copyright &copy; 2021 Bakery</div>
+
+            <div class="topbar">
+                <div class="topbar-col">
+                    <a href="tel:+012 345 67890"><i class="fa fa-phone-alt" style="color: #F28444;"></i>+012 345 67453</a>
+                </div>
+                <div class="topbar-col">
+                    <a href="mailto:info@example.com"><i class="fa fa-envelope" style="color: #F28444;"></i>deliciousBakery@gmail.com</a>
+                </div>
+                <div class="topbar-col">
+                    <div class="topbar-social">
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
 </html>
