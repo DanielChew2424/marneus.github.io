@@ -71,8 +71,7 @@ div h3 {
     display: inline-block;
 }
 
-form{
-    display: inline-block;
+form{display: inline-block;
     padding-right: 10px;
     margin: 15px;
 }
