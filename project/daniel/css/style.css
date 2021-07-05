@@ -25,19 +25,12 @@ nav {
     top: 0;
 }
 
-footer {
-    display: block;
-    height: auto;
-    background-color: #F2B6A0;
-    padding: 10px 20px 10px 20px;
-}
-
 h1 {
     border: #F28444 double 5px;
     text-align: center;
 }
 
-h2 {
+div .h20{
     border: #40241e solid;
     border-radius: 50px;
     text-align: center;
@@ -71,16 +64,18 @@ div h3 {
     display: inline-block;
 }
 
-form{
-    display: inline-block;
+form{display: inline-block;
     padding-right: 10px;
-    margin: 20px;
+    margin: 15px;
 }
+
+form h3{padding-left: 35px;
+    margin: 5px;}
 
 button{
     display: inline-block;
     padding-right: 10px;
-    margin: 20px;
+    margin: 15px;
 }
 
 .img1 {
@@ -344,3 +339,261 @@ a:focus {
 .page-header a:last-child::after {
     display: none;
 }
+
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#F2B6A0 ; 
+}
+
+.footer .footer-about,
+.footer .footer-link {
+    position: relative;
+    margin-bottom: 45px;
+}
+
+@media(min-width: 992px) {
+    .footer .container:first-child {
+        max-width: 960px;
+        margin-bottom: 30px;
+    }
+    
+    .footer .footer-about,
+    .footer .footer-link {
+        padding: 0 30px;
+    }
+}
+
+.footer .footer-about h2,
+.footer .footer-link h2 {
+    position: relative;
+    margin-bottom: 45px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #999999;
+}
+
+.footer .footer-about h2::after,
+.footer .footer-link h2::after{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, #999999, #ffffff, #999999);
+    border-radius: 0 100% 100% 0; 
+}
+
+.footer .footer-about p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .footer-about p i {
+    width: 20px;
+}
+
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #999999;
+    
+}
+
+.footer .footer-link a::before {
+    position: relative;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .footer-link a:hover {
+    color: #ffffff;
+}
+
+.footer .copyright {
+    padding: 15px;
+    border-top: 1px solid #3b3e43;
+    font-style: italic;
+    text-align: center;
+}
+
+.footer .copyright p {
+    margin: 0;
+    font-size: 14px;
+    color: #999999;
+}
+
+.footer .copyright .col-md-6:last-child p {
+    text-align: right;
+}
+
+.footer .copyright p a {
+    color: #999999;
+}
+
+.footer .copyright p a:hover {
+    color: #ffffff;
+}
+
+.topbar {
+    position: relative;
+    text-align: right;
+}
+
+.topbar .topbar-col {
+    display: inline-block;
+    padding: 0 15px;
+    margin-bottom: 15px;
+}
+
+.topbar-col a {
+    color: #213546;
+    font-size: 13px;
+}
+
+.topbar-col a i {
+    margin-right: 10px;
+    color: #4F84C4;
+}
+
+.topbar-social {
+    position: relative;
+}
+
+.topbar-social a {
+    display: inline-block;
+}
+
+.topbar-social a i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #bbbbbb;
+}
+
+.topbar-social a:last-child i {
+    margin: 0;
+}
+
+.topbar-social a:hover i {
+    color: #4F84C4;
+}
+
+@media (max-width: 768px) {
+    .footer .copyright p,
+    .footer .copyright .col-md-6:last-child p {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+.topbar {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.topbar .topbar-col {
+    margin: 0;
+}
+
+.topbar .topbar-social {
+    margin-top: 5px;
+}
+
+/* CSS FOR GALLERY */
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgb(138, 123, 146);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.44%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
