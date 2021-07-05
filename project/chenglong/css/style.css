@@ -415,7 +415,7 @@ a:focus {
     border-radius: 100%;
 }
 
-.section-header h2 {
+.section-header h6 {
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
@@ -759,7 +759,7 @@ button:hover,button:focus {outline: none;background: #000;color: #FFF;}
 .footer {
     position: relative;
     padding-top: 90px;
-    background: #F28444;
+    background: #F2B6A0;
 }
 
 .footer .footer-about,
@@ -862,6 +862,10 @@ button:hover,button:focus {outline: none;background: #000;color: #FFF;}
         margin: 5px 0;
         text-align: center;
     }
+}
+
+th {
+    width: 18%;
 }
 
 
