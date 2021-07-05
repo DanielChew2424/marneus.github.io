@@ -26,7 +26,6 @@
 
 
   <link href="css/style.css" rel="stylesheet">
-  <link href="/entongswork/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -196,7 +195,7 @@
           </div>
           <div class="form-group col-md-4">
             <label for="inputState">State</label>
-            <input type="text" class="form-control" id="inputSity" required>
+            <input type="text" class="form-control" id="inputState" required>
 
           </div>
           <div class="form-group col-md-2">
@@ -211,8 +210,7 @@
             <span class="popuptext" id="Popup">Order Success!</span>
           </div>
 
-          <a href="../daniel/shoppingcart.html"><button type="button"
-              class="btn btn-danger float-right">Back</button></a>
+          <button type="button" class="btn btn-danger float-right">Back</button>
         </div>
       </form>
 
@@ -248,33 +246,31 @@
       </div>
     </div>
   </footer>
+  <script>
 
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("Popup");
+      popup.classList.toggle("show");
+    }
+
+    function custom_template(obj) {
+      var data = $(obj.element).data();
+      var text = $(obj.element).text();
+      if (data && data['img_src']) {
+        img_src = data['img_src'];
+        template = $("<div><img src=\"" + img_src + "\" style=\"width:100px;height:50px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
+        return template;
+      }
+    }
+    var options = {
+      'templateSelection': custom_template,
+      'templateResult': custom_template,
+    }
+    $('#id_select2_example').select2(options);
+    $('.select2-container--default .select2-selection--single').css({ 'height': '90px', 'background-color': 'white', 'display': 'flex', 'justify-content': 'center', 'color': 'white' });
+
+  </script>
 </body>
 
 </html>
-
-<script>
-
-  // When the user clicks on div, open the popup
-  function myFunction() {
-    var popup = document.getElementById("Popup");
-    popup.classList.toggle("show");
-  }
-
-  function custom_template(obj) {
-    var data = $(obj.element).data();
-    var text = $(obj.element).text();
-    if (data && data['img_src']) {
-      img_src = data['img_src'];
-      template = $("<div><img src=\"" + img_src + "\" style=\"width:100px;height:50px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
-      return template;
-    }
-  }
-  var options = {
-    'templateSelection': custom_template,
-    'templateResult': custom_template,
-  }
-  $('#id_select2_example').select2(options);
-  $('.select2-container--default .select2-selection--single').css({ 'height': '90px', 'background-color': 'white', 'display': 'flex', 'justify-content': 'center', 'color': 'white' });
-
-</script>
