@@ -210,7 +210,7 @@
                           </div>
                           <div class="form-group col-md-4">
                             <label for="inputState">State</label>
-                            <input type="text" class="form-control" id="inputSity" required>
+                            <input type="text" class="form-control" id="inputState" required>
                         
                           </div>
                           <div class="form-group col-md-2">
@@ -224,40 +224,66 @@
                             <span class="popuptext" id="Popup">Order Success!</span>
                           </div>
 
-                        <a href="../daniel/shoppingcart.html"><button type="button" class="btn btn-danger float-right" >Back</button></a>
+                        <button type="button" class="btn btn-danger float-right" >Back</button>
                         </div>
                       </form>
                   
                 </div>
             </div>
             <!-- About End -->
-
-
+            
+            <footer class="footer">
+              <div class="col-lg-10">
+                  <h2>Get in Touch</h2>
+                  Delicious Bakery
+                  <br>12010 Bakery Road,
+                  <br>Zephyr, CA 95555
+                  <div class="copyright">Copyright &copy; 2021 Bakery</div>
+      
+                  <div class="topbar">
+                      <div class="topbar-col">
+                          <a href="tel:+012-345-67890"><i class="fa fa-phone-alt" style="color: #F28444;"></i>+012 345 67453</a>
+                      </div>
+                      <div class="topbar-col">
+                          <a href="mailto:info@example.com"><i class="fa fa-envelope" style="color: #F28444;"></i>deliciousBakery@gmail.com</a>
+                      </div>
+                      <div class="topbar-col">
+                          <div class="topbar-social">
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                              <a href=""><i class="fab fa-facebook-f"></i></a>
+                              <a href=""><i class="fab fa-youtube"></i></a>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                              <a href=""><i class="fab fa-linkedin-in"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          <script>
+  
+            // When the user clicks on div, open the popup
+          function myFunction() {
+            var popup = document.getElementById("Popup");
+            popup.classList.toggle("show");
+          }
+          
+          function custom_template(obj){
+              var data = $(obj.element).data();
+              var text = $(obj.element).text();
+              if(data && data['img_src']){
+                  img_src = data['img_src'];
+                  template = $("<div><img src=\"" + img_src + "\" style=\"width:100px;height:50px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
+                  return template;
+              }
+          }
+          var options = {
+          'templateSelection': custom_template,
+          'templateResult': custom_template,
+          }
+          $('#id_select2_example').select2(options);
+          $('.select2-container--default .select2-selection--single').css({'height': '90px','background-color': 'white','display': 'flex','justify-content': 'center','color':'white' });
+          
+          </script>
     </body>
 </html>
 
-<script>
-  
-  // When the user clicks on div, open the popup
-function myFunction() {
-  var popup = document.getElementById("Popup");
-  popup.classList.toggle("show");
-}
-
-function custom_template(obj){
-    var data = $(obj.element).data();
-    var text = $(obj.element).text();
-    if(data && data['img_src']){
-        img_src = data['img_src'];
-        template = $("<div><img src=\"" + img_src + "\" style=\"width:100px;height:50px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
-        return template;
-    }
-}
-var options = {
-'templateSelection': custom_template,
-'templateResult': custom_template,
-}
-$('#id_select2_example').select2(options);
-$('.select2-container--default .select2-selection--single').css({'height': '90px','background-color': 'white','display': 'flex','justify-content': 'center','color':'white' });
-
-</script>
